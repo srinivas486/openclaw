@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Runtime data
+*.sqlite
+*.db
+
+# Backups
+*.bak
+*.backup
+*.json.bak
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
