@@ -23,7 +23,7 @@ cp -n "$SRC_DIR"/workspace-planner/AGENTS.md "$SRC_DIR"/workspace-planner/HEARTB
 cp -n "$SRC_DIR"/workspace-bizresearcher/AGENTS.md "$SRC_DIR"/workspace-bizresearcher/HEARTBEAT.md "$SRC_DIR"/workspace-bizresearcher/IDENTITY.md "$SRC_DIR"/workspace-bizresearcher/MEMORY.md "$SRC_DIR"/workspace-bizresearcher/SOUL.md "$SRC_DIR"/workspace-bizresearcher/TOOLS.md "$SRC_DIR"/workspace-bizresearcher/USER.md workspace-bizresearcher/ 2>/dev/null || true
 
 # Check for changes
-if git diff --quiet --ignore-untracked . && ! git diff --cached --quiet; then
+if ! git diff --quiet; then
     echo "No changes to commit."
     exit 0
 fi
